@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #A62E4E;
+}
+
+.logo-name {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 80vw;
+    margin: auto;
+    padding: 10px 0;
+}
+
+.logo-name img {
+    max-width: 20vw;
+    height: auto;
+}
+
+.logo-name h1 {
+    font-size: 11pt;
+    align-self: center;
+    text-align: center;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+nav {
+    background-color: #77CFF2;
+    margin: auto;
+    padding: 10px 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-open,
+.menu-open i a {
+    background-color: transparent;
+    font-size: small;
+    color: #3a3a3a;
+    border: none;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.logo-menu {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    background-color: #A62E4E;
+    border: none;
+    margin: 20px auto;
+}
+
+.logo-menu a img {
+    max-width: 30vw;
+    height: auto
+}
+
+.logo-menu p {
+    color: white;
+}
+
+.menu-toggel-close {
+    border: none !important;
+
+}
+
+.menu-toggle {
+    position: fixed;
+    background-color: #77CFF2;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    height: 100vw;
+}
+
+.menu-toggle li {
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    list-style: none;
+    border: 1px solid #888;
+    margin: 5px 0
+}
+
+.menu-toggle li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-close {
+    display: none;
+    background-color: transparent;
+    color: #3a3a3a;
+    border: none;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+nav ul {
+    display: none;
+}
+
+nav form {
+    background-color: #7DDAFF;
+    border-radius: 25px;
+}
+
+nav form input,
+nav form button {
+    background-color: #7DDAFF;
+    padding: 3px;
+    border: none;
+    border-radius: 25px;
+}
+
+nav form button i {
+    color: #3a3a3a;
+}
+
+.campus {
+    color: #3a3a3a;
+    text-decoration: none;
+    border-radius: 15px;
+    border: 1px solid #888;
+    padding: 5px;
+    background-color: white;
+    font-size: 9pt;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+section {
+    max-width: 80vw;
+    margin: 20px auto;
+}
+
+section h1,
+section h4,
+section p {
+    text-align: center;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.about-us p {
+    max-width: 100vw;
+    padding: 20px 0;
+    margin: auto;
+    font-size: 11pt;
+    color: #3a3a3a;
+}
+
+
+
+.choose-us article {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 25px;
+}
+
+.choose-us img {
+    max-width: 30vw;
+    height: auto;
+    margin: auto;
+}
+
+.choose-us h4 {
+    padding: 0 0 10px 0;
+    color: #0B688C;
+}
+
+.choose-us p {
+    max-width: 60vw;
+    margin: auto;
+    font-size: 11pt;
+    color: #3a3a3a;
+}
+
+.faq p {
+    text-align: start;
+    max-width: 100vw;
+    margin: auto;
+    font-size: 11pt;
+    color: #3a3a3a;
+    text-align: justify;
+}
+
+/*corregir redundancias y lineas al pedo*/
+
+/*--- hasta acá está bien ---*/
+/*--- hasta acá está bien ---*/
+/*--- hasta acá está bien ---*/
+
+.faq-inside-box article {
+    border: 1px solid #3a3a3a;
+    margin: 10px 0;
+}
+
+.faq-inside-box button {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 8px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    transition: 0.4s;
+}
+
+.faq-inside-box button:hover {
+    background-color: #c5c5c5;
+}
+
+.faq-inside-box p {
+    padding: 5px;
+    padding-bottom: 0;
+    font-size: 11pt;
+}
+
+.faq-border {
+    border: 1px solid #c3c3c3;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+    background-color: #c5c5c5;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.panel p a {
+    color: #3a3a3a;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.accordion:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+
+footer {
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    flex-flow: column wrap;
+    text-align: center;
+    max-width: 80vw;
+}
+
+footer a,
+footer p {
+    margin: 10px auto;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 600px) {
+    /*tablet*/
+
+}
+
+@media (min-width: 1200px) {
+
+    /*laptop*/
+    .menu-toggle,
+    nav form {
+        display: none;
+    }
+
+    nav ul {
+        display: block;
+        list-style: none;
+    }
+
+    nav ul li {
+        width: 25vw;
+    }
+
+    nav ul li>a {
+        background-color: #77CFF2;
+        color: #3a3a3a;
+        padding: 10px;
+        display: block;
+        text-decoration: none;
+        min-width: 100px;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+
+    nav ul li>a:hover {
+        color: white;
+        background-color: #7DDAFF;
+    }
+
+    nav ul>li {
+        float: left;
+        text-align: center;
+    }
+
+    nav ul>li>ul {
+        display: none;
+    }
+
+    nav ul>li:hover>ul {
+        display: block;
+    }
+}
+
+@media (min-width: 1440px) {
+    /*desktop*/
+
+}
